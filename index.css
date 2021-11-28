@@ -1,0 +1,38 @@
+body{
+    height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+#data-table{
+    margin: 20px;
+    margin-top: 50px;
+}
+
+
+#container{
+    margin-left: 30px;
+    width: 90%;
+    padding: 20px 10px;
+    height: 70%;
+    overflow: auto;
+}
+#data-table tr{
+    background-color: transparent;
+}
+
+.delete-btn{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+#delete-all-btn{
+    padding: 8px 10px;
+    margin: 10ox;
+    border: none;
+    outline: none;
+    background: red;
+    color: white;
+    font-weight: bold;
+}
