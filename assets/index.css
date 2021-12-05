@@ -1,0 +1,114 @@
+body{
+    height: 90%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: blanchedalmond;
+}
+
+#data-table{
+    margin-top: 100px;
+}
+
+
+#container{
+    margin: 10px;
+    margin-left: 150px;
+    width: 70%;
+    padding: 20px 20px;
+    height: 70%;
+    overflow: auto; 
+    border: 2px solid black; 
+    background-color: white; 
+    box-shadow: 0px 0px 5px 5px grey;
+    border-radius: 5px;
+}
+
+#data-table tr{
+    background-color: transparent;
+    font-weight: 500;
+}
+
+#data-table tr:hover{
+    background-color: grey;
+    color: white;
+}
+
+#data-table tr td{
+    padding: 5px;
+    margin: 0;
+    width: 200px;
+    text-align: center;
+
+}
+
+#data-table thead{
+    margin-top: 10px;
+}
+
+#data-table thead th{
+    padding: 5px;
+    text-align: center;
+    background-color: thistle;
+}
+
+.delete-btn{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.delete-btn:hover{
+    color:red;
+}
+
+#delete-all-btn{
+    padding: 8px 10px;
+    margin: 10ox;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+}
+
+
+
+/* Edit pop up window */
+#edit-box{
+    height: 0;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 300px;
+    transform: translateY(100px);
+    border: 2px solid black;
+    background-color:grey;
+    z-index: 2;
+    padding: 5px 10px;
+    transition: 2s ease-in-out;
+    display: none;
+
+}
+
+#edit-box input{
+    width: 250px;
+    background-color: rgb(75, 72, 72);
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+#submit-changes-btn{
+    padding: 2px 10px;
+    margin-top: 5px;
+    background-color: thistle;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    
+}
