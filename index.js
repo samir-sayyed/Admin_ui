@@ -42,7 +42,7 @@ function displayAllDetails(data){
     let tableRow = document.createElement('tr'); // create one table row element and setting its inner html as json response
     tableRow.id = data.id;
     tableRow.innerHTML = (`
-                            <td scope="row" style= "text-align: left; padding-left:10px;"><input type="checkbox" class="select" id = ${data.id}"></td> 
+                            <td scope="row" style= "text-align: left; padding-left:10px;"><input type="checkbox" class="select" id = ${data.id}></td> 
                             <td id = "name${data.id}">${data.name}</td>
                             <td id = "email${data.id}">${data.email}</td>
                             <td id = "role${data.id}">${data.role}</td>
@@ -110,10 +110,13 @@ function deleteRow(id){
 
 //--------------------------logic for deleting multiple element----------------------//
 
-deleteAllBtn.onclick = () => {
+deleteAllBtn.onclick = ()=> {
+    console.log("hi");
      for(let i = select.length-1; i >= 0; i--){
+       
          if(select[i].checked == true){ // it will check checked box is checked or not
             let id = select[i].id; //if checked then
+            console.log(id);
             deleteRow(id); // it will send id of checked box to delete function      
         }
     }
